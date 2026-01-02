@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnetura — Магазин качественной мебели</title>
+    <style>
+    
+        
+        * {
+        
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-size: 1.2rem;
+        }
+        .nav-links a {
+            color: rgb(247, 246, 246);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Logo.png) center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 10rem 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        .products {
+            padding: 3rem 0;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            width: 95%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1.5rem;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Furnitura</div>
+                <div class="nav-links">
+                    <a href="http://127.0.0.1:5500/index.html">Главная</a>
+                    <a href="#">Наш Инстограмм</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Качественная мебель для вашего дома</h1>
+               <p>Широкий ассортимент современной мебели по выгодным ценам</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Популярные товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src=https://avatars.mds.yandex.net/i?id=8ef57ba6a91ab40b8946d35ad9f4d19ef3f8e37e-12752977-images-thumbs&n=13 alt="Диван Люкс" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Кухни</h3>
+                        <p>Современный угловой диван с механизмом трансформации.</p>
+                        <a href="http://127.0.0.1:5500/2index.html" class="btn"> Каталог</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/10141272/2a0000018c3587bddb28b78adef6d6a03a1a/orig" alt="Шкаф-купе" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Шкаф-купе «Стандарт»</h3>
+                        <p>Вместительный шкаф с зеркальными дверцами.</p>
+                        <a href="#" class="btn"> Каталог</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src=https://hoff.ru/upload/hoff_resize/hoff-images/303/379/0/134cb9df0bca85d2ab9ad238d8527247.jpg/1500x1000_85.jpeg alt="Кухонный стол" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Тумбочки  «Комфорт»</h3>
+                        <p>Стол из массива дерева, раскладной механизм.</p>
+                        <a href="#" class="btn"> Каталог</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src=https://avatars.mds.yandex.net/get-goods_pic/14410088/hat3323e7d4adba82b3fff74eb67407892e/orig alt="Кровать" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Столы </h3>
+                        <p>Двуспальная кровать с ортопедическим основанием.</p>
+                        <a href="#" class="btn"> Каталог </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 МебельМаркет. Все права защищены.</p>
+            <p>Телефон: +7 (928) 530-13-22 </p>
+        </div>
+    </footer>
+</body>
+</html>
