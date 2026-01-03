@@ -52,10 +52,10 @@
             color: #3498db;
         }
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Logo.png) center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://placehold.co/1200x400') center/cover no-repeat;
             color: white;
             text-align: center;
-            padding: 10rem 0;
+            padding: 6rem 0;
         }
         .hero h1 {
             font-size: 3rem;
@@ -79,13 +79,13 @@
         }
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
         .product-card {
             border: 1px solid #eee;
-            border-radius: 8px;
+            border-radius: 5px;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -94,8 +94,8 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .product-img {
-            width: 95%;
-            height: 300px;
+            height: 500px;
+            padding-left: 500px;
             object-fit: cover;
         }
         .product-info {
@@ -118,13 +118,22 @@
             text-align: center;
             margin-top: 3rem;
         }
+        .hero-title {
+    position: relative;
+    display: inline-block;
+    padding-left: 600px; /* отступ слева для логотипа */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(22, 21, 21); /* цвет текста */
+        }
+        
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
         }
-    </style>
-</head>
+        </style>
+        </head>
 <body>
     <header>
         <div class="container">
@@ -138,55 +147,78 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Качественная мебель для вашего дома</h1>
-               <p>Широкий ассортимент современной мебели по выгодным ценам</p>
-        </div>
-    </section>
+    <div class="container">
+        <h1 class="hero-title">Кухни</h1>
+    </div>
 
     <section class="products">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Популярные товары</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <img src=https://avatars.mds.yandex.net/i?id=8ef57ba6a91ab40b8946d35ad9f4d19ef3f8e37e-12752977-images-thumbs&n=13 alt="Диван Люкс" class="product-img">
+                    <img src="kuxn.jpg" alt="Кухня " class="product-img">
                     <div class="product-info">
                         <h3 class="product-title">Кухни</h3>
                         <p>Современный угловой диван с механизмом трансформации.</p>
-                        <a href="http://127.0.0.1:5500/2index.html" class="btn"> Каталог</a>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <img src="https://avatars.mds.yandex.net/get-mpic/10141272/2a0000018c3587bddb28b78adef6d6a03a1a/orig" alt="Шкаф-купе" class="product-img">
+<div class="product-card">
+                    <img src="./poop/20250329_154324.jpg" alt="1" class="product-img">
                     <div class="product-info">
-                        <h3 class="product-title">Шкаф-купе «Стандарт»</h3>
-                        <p>Вместительный шкаф с зеркальными дверцами.</p>
-                        <a href="#" class="btn"> Каталог</a>
+                        <h3 class="product-title"></h3>
+                        <p></p>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <img src=https://hoff.ru/upload/hoff_resize/hoff-images/303/379/0/134cb9df0bca85d2ab9ad238d8527247.jpg/1500x1000_85.jpeg alt="Кухонный стол" class="product-img">
-                    <div class="product-info">
-                        <h3 class="product-title">Тумбочки  «Комфорт»</h3>
-                        <p>Стол из массива дерева, раскладной механизм.</p>
-                        <a href="#" class="btn"> Каталог</a>
-                    </div>
-                </div>
 
-                <div class="product-card">
-                    <img src=https://avatars.mds.yandex.net/get-goods_pic/14410088/hat3323e7d4adba82b3fff74eb67407892e/orig alt="Кровать" class="product-img">
+<div class="product-card">
+                    <img src="./poop/20250806_184237.jpg"alt="2" class="product-img">
                     <div class="product-info">
-                        <h3 class="product-title">Столы </h3>
-                        <p>Двуспальная кровать с ортопедическим основанием.</p>
-                        <a href="#" class="btn"> Каталог </a>
+                        <h3 class="product-title"> </h3>
+                        <p></p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <div class="product-card">
+                    <img src="."alt="3" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+
+    <div class="product-card">
+                    <img src="./poop/Screenshot_20250731_122634_WhatsApp.jpg"alt="4" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+
+    <div class="product-card">
+                    <img src="./poop/Screenshot_20250226_112529_WhatsApp.jpg"alt="5" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+                
+<div class="product-card">
+                    <img src="."alt="" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+
+<div class="product-card">
+                    <img src="."alt="" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+    
+<div class="product-card">
+                    <img src="."alt="" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title"> </h3>
+                        <p></p>
+                    </div>
+
+    
 
     <footer>
         <div class="container">
